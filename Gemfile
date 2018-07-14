@@ -16,6 +16,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # Email
 gem 'aws-ses', require: 'aws/ses'
+gem 'griddler'
+gem 'griddler-ses', git: 'https://github.com/weilandia/griddler-ses'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
