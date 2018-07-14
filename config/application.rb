@@ -32,6 +32,9 @@ module BlazarPro
 
     config.generators do |g|
       g.orm :active_record, primary_key_type: :uuid
+      g.assets false
+      g.helper false
+      g.template_engine false
     end
   end
 end

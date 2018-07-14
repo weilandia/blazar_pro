@@ -1,4 +1,4 @@
 class EmailProcessor
-  def self.process(email)
+  def self.call(email_id:)
   end
 end
