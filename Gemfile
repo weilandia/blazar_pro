@@ -14,10 +14,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'mini_magick', '~> 4.8'
 gem 'bootsnap', '>= 1.1.0', require: false
 
-# Email
-gem 'aws-ses', require: 'aws/ses'
-gem 'griddler'
-gem 'griddler-ses', git: 'https://github.com/weilandia/griddler-ses'
+gem 'aws-sdk-s3', require: false
+gem 'aws-ses', require: false
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
