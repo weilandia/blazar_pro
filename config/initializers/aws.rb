@@ -8,4 +8,4 @@ Aws.config.update(
   region: aws_credentials[:region]
 )
 
-$s3_client = Aws::S3::Client.new
+$s3_client = Aws::S3::Resource.new.bucket("blazar-pro-#{Rails.env}")
